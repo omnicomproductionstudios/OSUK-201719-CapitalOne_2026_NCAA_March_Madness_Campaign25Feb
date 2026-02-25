@@ -1,0 +1,302 @@
+img, div,ft-click,ft-video-controls{position: absolute; margin: 0; padding: 0; -webkit-backface-visibility: hidden; -moz-backface-visibility:hidden; backface-visibility: hidden;}
+body{
+  color:#000;
+  margin:0;
+  
+}
+
+.bannerSize{width: 728px; height: 90px;}
+#banner { overflow: hidden;}
+#cover{
+  background-color: #D6E8EA;
+  top: 0;
+  z-index: 949;
+}
+
+.clickthrough{
+  cursor: pointer;
+  z-index: 800;
+}
+
+.defaultBorder{
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  display: block;
+  pointer-events: none;
+  z-index: 850;
+}
+
+.defaultSize{
+  height: 90px;
+  width: 728px;
+}
+.expandSize{
+  height: 250px;
+  width: 728px;
+}
+
+ft-default{
+    background-color: #D6E8EA;
+    height:90px;
+    overflow: hidden;
+    text-align: center;
+    width:728px;    
+}
+
+/* B-Ball, shadow, and svg bounce path ------------ */
+.ballCont{
+  height: 90px;
+  left: 728px;
+  top: 0;
+  width: 50px;
+  z-index: 20;
+}
+.ballCont #ball{
+  height: 60px;
+  left: 0;
+  top: 0;
+  width: 60px;
+  z-index: 401;
+}
+.ballCont #ballShadow{
+  height: 6px;
+  left: 13px;
+  opacity: 0.5;
+  transform-origin: center center;
+  top: 80px;
+  width: 35px;
+}
+
+/* frame 1 */
+#txt1Cont{
+  height: 90px;
+  left: 0px;
+  overflow: hidden;
+  top: 0px;
+  width: 728px;
+  z-index: 10;
+}
+
+#txt1a{
+  height: 56px;
+  left: 237px;
+  top: 18px;
+  width: 256px;
+}
+
+#rArrow{
+  height: 24px;
+  left: 671px;
+  top: 33px;
+  width: 16px;
+}
+
+#fdic {
+  height: 27px;
+  left: 562px;
+  top: 31px;
+  width: 43px;
+}
+
+
+/* Collapsed Cap One Logo ------------ */
+.capOneLogo{
+  height: 65px;
+  left: 16px;
+  top: 20px;
+  transform: scale(0.77);
+  transform-origin: top left;
+  width: 181px;
+  z-index: 5;
+}
+#redSwoop{
+  height: 65px;
+  left: 49px;
+  top: 0;
+  width: 126px;
+}
+#capital{
+  height:28px;
+  left: 0;
+  top: 27px;
+  width: 122px;
+}
+#one{
+  height: 27px;
+  left: 123px;
+  top: 27px;
+  width: 57px;
+}
+
+/* Expanded Cap One Logo ------------ */
+.expCapOneLogo{
+  height: 70px;
+  left: 461px;
+  transform: scale(0.51);
+  transform-origin: top left;
+  top: 23px;
+  width: 196px;
+  z-index: 800;
+}
+
+.expCapOneLogo #expRedSwoop{ 
+  height: 70px;
+  left: 53px;
+  top: 0;
+  width: 136px;
+}
+
+.expCapOneLogo #expCapital{ 
+  height: 29px;
+  left: 0;
+  top: 29px;
+  width: 133px;
+}
+
+.expCapOneLogo #expOne{ 
+  height: 29px;
+  left: 133px;
+  top: 29px;
+  width: 62px;
+}
+
+#txt2a{
+  height: 23px;
+  left: 461px;
+  top: 90px;
+  width: 197px;
+  z-index: 201;
+}
+#txt2b{
+  height: 24px;
+  left: 461px;
+  top: 113px;
+  width: 197px;
+  z-index: 202;
+}
+#txt2c{
+  height: 25px;
+  left: 461px;
+  top: 138px;
+  width: 197px;
+  z-index: 203;
+}
+#txt2d{
+  height: 20px;
+  left: 462px;
+  top: 170px;
+  width: 162px;
+  z-index: 204;
+}
+
+#exprArrow{
+  height: 26px;
+  left: 678px;
+  top: 110px;
+  width: 17px;
+  z-index: 205;
+}
+
+.ballContExp{
+  height: 88px;
+  left: 440px;
+  overflow: hidden;
+  top: 190px;
+  width: 288px;
+  z-index: 220;
+}
+.ballContExp #ball2{
+  height: 50px;
+  left: 288px;
+  top: 0;
+  width: 50px;
+}
+.ballContExp #ball2Shadow{
+  height: 8px;
+  left: 292px;
+  top: 46px;
+  width: 42px;
+}
+
+#fdicExp {
+  height: 18px;
+  left: 668px;
+  top: 11px;
+  width: 28px;
+  z-index: 250;
+}
+
+ft-expand{
+    background-color: #D6E8EA;
+    height: 250px;
+    margin-top:0;
+    overflow: hidden;
+    position:absolute;
+    text-align: center;
+    width:728px;
+}
+
+#close{
+  right: 0;
+  top: 0;
+  z-index: 850;
+}
+
+.expandBtn, .closeBtn{
+  height: 20px;
+  right: 1px;
+  top: 1px;
+  transform: rotate(180deg);
+  width: 20px;
+  z-index: 850;
+}
+
+.closeBtn{
+  transform: rotate(0deg);
+}
+
+.videoCont{
+  height: 250px;
+  left: 0;
+  top: 0;
+  width: 444px;
+  z-index: 830;
+}
+#vidPoster{
+  height: inherit;
+  left: 0;
+  width: inherit;
+  z-index: 831;
+}
+
+#video1{
+  height: inherit;
+  left: 0;
+  position: absolute;
+  width: inherit;
+}
+
+#tap{   
+    margin: 0;          
+    padding-top: 17.5px;
+}
+.ncaaLockupCont{
+  height: 74px;
+  left: 444px;
+  overflow: hidden;
+  top: 163px;
+  width: 310px;
+  z-index: 210;
+}
+#proudPartnerOf{
+  height: 60px;
+  left: 80px;
+  top: 11px;
+  width: 124px;
+}
+#ncaammLogo{
+  height: 36px;
+  left: 150px;
+  top: 0;
+  width: 85px;
+}

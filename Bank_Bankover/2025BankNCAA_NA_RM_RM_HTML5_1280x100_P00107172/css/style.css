@@ -1,0 +1,294 @@
+img, div,ft-click,ft-video-controls{position: absolute; margin: 0; padding: 0; -webkit-backface-visibility: hidden; -moz-backface-visibility:hidden; backface-visibility: hidden;}
+body{
+  color:#000;
+  margin:0;
+  
+}
+
+.bannerSize{width: 1280px; height: 100px;}
+#banner { overflow: hidden;}
+#cover{
+  background-color: #D6E8EA;
+  top: 0;
+  z-index: 949;
+}
+
+.clickthrough{
+  cursor: pointer;
+  z-index: 800;
+}
+
+.defaultBorder{
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  display: block;
+  pointer-events: none;
+  z-index: 850;
+}
+
+.defaultSize{
+  height: 100px;
+  width: 1280px;
+}
+.expandSize{
+  height: 418px;
+  width: 1280px;
+}
+
+ft-default{
+    background-color: #D6E8EA;
+    height:100px;
+    overflow: hidden;
+    text-align: center;
+    width:1280px;    
+}
+
+/* B-Ball, shadow, and svg bounce path ------------ */
+.ballCont{
+  height: 100px;
+  left: 1280px;
+  top: 0;
+  width: 62px;
+  z-index: 20;
+}
+.ballCont #ball{
+  height: 62px;
+  left: 0;
+  top: 0;
+  width: 62px;
+  z-index: 401;
+}
+.ballCont #ballShadow{
+  height: 6px;
+  left: 15px;
+  opacity: 0.5;
+  transform-origin: center center;
+  top: 83px;
+  width: 31px;
+}
+
+/* frame 1 */
+#txt1Cont{
+  height: 90px;
+  left: 0px;
+  overflow: hidden;
+  top: 0px;
+  width: 1270px;
+  z-index: 10;
+}
+
+#txt1a{
+  height: 40px;
+  left: 281px;
+  top: 32px;
+  width: 738px;
+}
+
+#rArrow{
+  height: 24px;
+  left: 1199px;
+  top: 38px;
+  width: 16px;
+}
+
+#fdic {
+  height: 29px;
+  left: 1089px;
+  top: 35px;
+  width: 46px;
+}
+
+
+/* Collapsed Cap One Logo ------------ */
+.capOneLogo{
+  height: 65px;
+  left: 25px;
+  top: 22px;
+  transform: scale(0.87);
+  width: 181px;
+  z-index: 5;
+}
+#redSwoop{
+  height: 65px;
+  left: 49px;
+  top: 0;
+  width: 126px;
+}
+#capital{
+  height:28px;
+  left: 0;
+  top: 27px;
+  width: 122px;
+}
+#one{
+  height: 27px;
+  left: 123px;
+  top: 27px;
+  width: 57px;
+}
+
+/* Expanded Cap One Logo ------------ */
+.expCapOneLogo{
+  height: 70px;
+  left: 773px;
+  top: 31px;
+  width: 196px;
+  z-index: 800;
+}
+
+.expCapOneLogo #expRedSwoop{ 
+  height: 70px;
+  left: 53px;
+  top: 0;
+  width: 136px;
+}
+
+.expCapOneLogo #expCapital{ 
+  height: 29px;
+  left: 0;
+  top: 29px;
+  width: 133px;
+}
+
+.expCapOneLogo #expOne{ 
+  height: 29px;
+  left: 133px;
+  top: 29px;
+  width: 62px;
+}
+
+#txt2a{
+  height: 34px;
+  left: 775px;
+  top: 160px;
+  width: 316px;
+  z-index: 201;
+}
+#txt2b{
+  height: 34px;
+  left: 775px;
+  top: 198px;
+  width: 316px;
+  z-index: 201;
+}
+#txt2c{
+    height: 37px;
+    left: 771px;
+    top: 234px;
+    width: 325px;
+    z-index: 201;
+}
+
+
+#exprArrow{
+  height: 26px;
+  left: 1180px;
+  top: 202px;
+  width: 17px;
+  z-index: 205;
+}
+
+.ballContExp{
+  height: 88px;
+  left: 734px;
+  overflow: hidden;
+  top: 310px;
+  width: 546px;
+  z-index: 220;
+}
+.ballContExp #ball2{
+  height: 86px;
+  left: 550px;
+  top: 0;
+  width: 86px;
+}
+.ballContExp #ball2Shadow{
+  height: 8px;
+  left: 558px;
+  top: 80px;
+  width: 69px;
+}
+
+.ncaaLockupCont{
+  height: 96px;
+  left: 734px;
+  overflow: hidden;
+  top: 297px;
+  width: 546px;
+  z-index: 210;
+}
+#proudPartnerOf{
+  height: 97px;
+  left: 178px;
+  top: 0px;
+  width: 201px;
+}
+#ncaammLogo{
+  height: 51px;
+  left: 202px;
+  top: 0;
+  width: 122px;
+}
+
+#fdicExp {
+  height: 29px;
+  left: 1204px;
+  top: 20px;
+  width: 46px;
+  z-index: 250;
+}
+
+ft-expand{
+    background-color: #D6E8EA;
+    height: 418px;
+    margin-top:0;
+    overflow: hidden;
+    position:absolute;
+    text-align: center;
+    width:1280px;
+}
+
+#close{
+  right: 0;
+  top: 0;
+  z-index: 850;
+}
+
+.expandBtn, .closeBtn{
+  height: 20px;
+  right: 1px;
+  top: 1px;
+  transform: rotate(180deg);
+  width: 20px;
+  z-index: 850;
+}
+
+.closeBtn{
+  transform: rotate(0deg);
+}
+
+.videoCont{
+  height: 418px;
+  left: 0;
+  top: 0;
+  width: 742px;
+  z-index: 830;
+}
+#vidPoster{
+  height: inherit;
+  left: 0;
+  width: inherit;
+  z-index: 831;
+}
+
+#video1{
+  height: inherit;
+  left: 0;
+  position: absolute;
+  width: inherit;
+}
+
+#tap{   
+    margin: 0;          
+    padding-top: 17.5px;
+}
