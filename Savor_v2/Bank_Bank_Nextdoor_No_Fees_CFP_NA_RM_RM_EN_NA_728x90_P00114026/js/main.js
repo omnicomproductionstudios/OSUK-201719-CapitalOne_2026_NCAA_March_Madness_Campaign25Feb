@@ -41,7 +41,7 @@ function init(){
 
         .to("#ball", { duration: 2, x: 657, ease: "none" }, 0)
         .to("#ball", {duration: 1, y: -40, ease: "power1.out", yoyo: true, repeat: 1}, 0)
-        .to("#coffee", {scale:1, autoAlpha:1, ease: "elastic.out(1, 0.3)",},">-0.1")
+        .to("#coffee", { duration: 0.45, scale:1, autoAlpha:1, ease: "power4.out" },">-0.1")
 
         .call(onMouseEnter, null, '>+2')
         .call(onMouseLeave, null, '>+1');
@@ -71,7 +71,7 @@ function expand(){
         .to("#expBall", { duration: 2, x: 270, ease: "none" }, 0)
         .to("#expBall", { duration: 1, y: -40, ease: "power1.out", yoyo: true, repeat: 1 }, 0)
         
-        .to("#expCoffee", { scale:1, autoAlpha:1, ease: "elastic.out(1, 0.3)" },">-0.1")
+        .to("#expCoffee", { duration: 0.45, scale:1, autoAlpha:1, ease: "power3.out" },">-0.1")
 
   gsap.delayedCall(3, onMouseEnter);
   gsap.delayedCall(3.5, onMouseLeave);
