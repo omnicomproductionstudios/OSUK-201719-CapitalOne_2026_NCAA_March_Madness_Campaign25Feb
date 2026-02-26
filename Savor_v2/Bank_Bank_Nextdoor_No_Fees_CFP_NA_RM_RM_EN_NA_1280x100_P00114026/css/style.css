@@ -1,0 +1,327 @@
+img, div, svg, ft-click,ft-video-controls{position: absolute; margin: 0; padding: 0; -webkit-backface-visibility: hidden; -moz-backface-visibility:hidden; backface-visibility: hidden;}
+body{
+  color:#000;
+  margin:0;
+  
+}
+
+.bannerSize{width: 1280px; height: 100px;}
+
+#cover{
+  background-color: #f4f4f4;
+  top: 0;
+  z-index: 949;
+}
+
+.clickthrough{
+  cursor: pointer;
+  z-index: 800;
+}
+
+.defaultBorder{
+  border: 1px solid #7d7d7d;
+  box-sizing: border-box;
+  display: block;
+  pointer-events: none;
+  z-index: 1000;
+}
+
+.defaultSize{
+  height: 100px;
+  width: 1280px;
+}
+.expandSize{
+  height: 418px;
+  width: 1280px;
+}
+
+ft-default{
+  background-color: #D6E8EA;
+  height:100px;
+  text-align: center;
+  width:1280px;  
+  overflow: hidden;  
+}
+
+.capOneLogo{
+  height: 68px;
+  left: 45px;
+  top: 15px;
+  width: 185px;
+  z-index: 400;
+}
+#redSwoop{
+  height: 68px;
+  left: 50px;
+  top: 0;
+  width: 129px;
+}
+#capital{
+  height: 28px;
+  left: 0;
+  top: 28px;
+  width: 125px;
+}
+#one{
+  height: 28px;
+  left: 127px;
+  top: 28px;
+  width: 59px;
+}
+
+.ctaCont {
+  height: 25px;
+  left: 1181px;
+  top: 36px;
+  width: 16px;
+}
+.ctaCont #rArrow {
+  height: inherit;
+  width: inherit;
+}
+
+#fdicLogo{
+  height: 29px;
+  left: 1088px;
+  top: 35px;
+  width: 46px;
+}
+
+#txt1a {
+  height: 37px;
+  left: 0;
+  width: 665px;
+}
+
+.mask {
+  left: 340px;
+  top: 36px;
+}
+
+.mask a {
+  animation: 3s 
+cubic-bezier(0.7, 0.1, 0.1, 0.7) 1s shimmer;
+  background-position: -805px 0;
+  display: block;
+  height: 37px;
+  margin: 0px auto;
+  position: relative;
+  text-align: center;
+  width: 665px;
+}
+
+#mask-glimmer{
+  height: 32px;
+  width: 799px;
+}
+
+.mask a::after {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(0 0, circle farthest-side, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0.8) 60%, rgba(255, 255, 255, 0) 100%) no-repeat;
+  background: radial-gradient(circle farthest-side at 0 0, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0.8) 60%, rgba(255, 255, 255, 0) 100%) no-repeat;
+  background-position: inherit;
+  mask: url("#mask-glimmer");
+}
+
+@keyframes shimmer {
+  from {
+    background-position: -805px 0;
+  }
+  to {
+    background-position: 805px 0;
+  }
+}
+
+ft-expand{
+    background-color: #D6E8EA;
+    height:418px;
+    margin-top:0;
+    overflow: hidden;
+    position:absolute;
+    text-align: center;
+    width:1280px;
+}
+
+#close{
+  height: 20px;
+  right: 0;
+  top: 0;
+  width: 20px;
+  z-index: 850;
+}
+
+.expCapOneLogo{
+  height: 52px;
+  left: 784px;
+  top: 23px;
+  width: 147px;
+  z-index: 399;
+}
+
+.expCapOneLogo #redSwoop{
+  height: 53px;
+  left: 40px;
+  top: 0;
+  width: 102px;
+}
+
+.expCapOneLogo #capital{
+  height: 22px;
+  left: 0;
+  top: 22px;
+  width: 100px;
+}
+
+.expCapOneLogo #one{
+  height: 22px;
+  left: 101px;
+  top: 22px;
+  width: 47px;
+}
+
+.expandBtn, .closeBtn{
+  height: 20px;
+  right: 0;
+  top: 0;
+  transform: rotate(180deg);
+  width: 20px;
+  z-index: 850;
+}
+
+.closeBtn{
+  transform: rotate(0deg);
+}
+
+.txt2a {
+  height: 22px;
+  left: 2px;
+  width: 120px;
+}
+.txt2b {
+  height: 21px;
+  left: 0;
+  top: 40px;
+  width: 159px;
+}
+.txt2c {
+  height: 28px;
+  left: 0px;
+  top: 76px;
+  width: 219px;
+}
+.txt2d {
+  height: 23px;
+  left: 1px;
+  top: 95px;
+  width: 179px;
+}
+
+.exp-mask {
+  left: 785px;
+  top: 129px;
+}
+
+.exp-mask a {
+  animation: 3s 
+cubic-bezier(0.7, 0.1, 0.1, 0.7) 0.25s expshimmer;
+  background-position: -235px 0;
+  display: block;
+  height: 105px;
+  margin: 0px auto;
+  position: relative;
+  text-align: center;
+  width: 219px;
+}
+
+#exp-mask-glimmer{
+  height: 118px;
+  width: 232px;
+}
+
+.exp-mask a::after{
+  content: "";
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(0 0, circle farthest-side, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0.8) 60%, rgba(255, 255, 255, 0) 100%) no-repeat;
+  background: radial-gradient(circle farthest-side at 0 0, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0.8) 60%, rgba(255, 255, 255, 0) 100%) no-repeat;
+  background-position: inherit;
+  mask: url("#exp-mask-glimmer");
+}
+
+@keyframes expshimmer {
+  from {
+    background-position: -235px 0;
+  }
+  to {
+    background-position: 235px 0;
+  }
+}
+
+/*----- Video Container -----*/
+.videoCont{
+  height: 418px;
+  left: 0;
+  top: 0;
+  width: 744px;
+  z-index: 830;
+}
+#vidPoster{
+  height: inherit;
+  left: 0;
+  width: inherit;
+  z-index: 831;
+}
+#video1{
+  height: inherit;
+  left: 0;
+  position: absolute;
+  width: inherit;
+}
+
+/*----- expand cta -----*/
+.ctaExpCont{
+  height: 100%;
+  width: 100%;
+}
+.ctaExpCont .ctaBtn {
+  height: 14px;
+  left: 786px;
+  top: 264px;
+  width: 105px;
+}
+.ctaExpCont #ctaTxt {
+  height: 14px;
+  left: 0;
+  top: 0;
+  width: 91px;
+}
+.ctaExpCont #rArrowExp {
+  height: 11px;
+  left: 99px;
+  top: 3px;
+  width: 7px;
+}
+
+#fdicLogoExp{
+  height: 33px;
+  left: 784px;
+  top: 356px;
+  width: 53px;
+}
+
+#jeremy{
+  height: 362px;
+  left: 975px;
+  top: 57px;
+  width: 304px;
+}

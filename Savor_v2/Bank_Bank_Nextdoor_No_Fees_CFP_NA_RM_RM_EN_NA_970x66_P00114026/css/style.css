@@ -1,0 +1,349 @@
+img,
+div,
+svg,
+ft-click,
+ft-video-controls {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+body {
+  color: #000;
+  margin: 0;
+
+}
+
+.bannerSize {
+  width: 970px;
+  height: 66px;
+}
+
+#cover {
+  background-color: #f4f4f4;
+  top: 0;
+  z-index: 949;
+}
+
+.clickthrough {
+  cursor: pointer;
+  z-index: 800;
+}
+
+.defaultBorder {
+  border: 1px solid #7d7d7d;
+  box-sizing: border-box;
+  display: block;
+  pointer-events: none;
+  z-index: 1000;
+}
+
+.defaultSize {
+  height: 66px;
+  width: 970px;
+}
+
+.expandSize {
+  height: 250px;
+  width: 970px;
+}
+
+ft-default {
+  background-color: #D6E8EA;
+  height: 66px;
+  text-align: center;
+  width: 970px;
+  overflow: hidden;
+}
+
+.capOneLogo {
+  height: 45px;
+  left: 27px;
+  top: 11px;
+  width: 122px;
+  z-index: 400;
+}
+
+#redSwoop {
+  height: 45px;
+  left: 33px;
+  top: 0;
+  width: 85px;
+}
+
+#capital {
+  height: 19px;
+  left: 0;
+  top: 19px;
+  width: 83px;
+}
+
+#one {
+  height: 19px;
+  left: 83px;
+  top: 19px;
+  width: 39px;
+}
+
+.ctaCont {
+  height: 25px;
+  right: 64px;
+  top: 20px;
+  width: 16px;
+}
+
+.ctaCont #rArrow {
+  height: inherit;
+  width: inherit;
+}
+
+#fdicLogo {
+  height: 28px;
+  left: 791px;
+  top: 19px;
+  width: 45px;
+}
+
+#txt1a {
+  height: 28px;
+  left: 0;
+  width: 499px;
+}
+
+.mask {
+  left: 230px;
+  top: 21px;
+}
+
+.mask a {
+  animation: 3s 
+cubic-bezier(0.7, 0.1, 0.1, 0.7) 0.25s shimmer;
+  background-position: -608px 0;
+  display: block;
+  height: 28px;
+  margin: 0px auto;
+  position: relative;
+  text-align: center;
+  width: 499px;
+}
+
+#mask-glimmer {
+  height: 23px;
+  width: 574px;
+}
+
+.mask a::after {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(0 0, circle farthest-side, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0.8) 60%, rgba(255, 255, 255, 0) 100%) no-repeat;
+  background: radial-gradient(circle farthest-side at 0 0, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0.8) 60%, rgba(255, 255, 255, 0) 100%) no-repeat;
+  background-position: inherit;
+  mask: url("#mask-glimmer");
+}
+@keyframes shimmer {
+  from {
+    background-position: -608px 0;
+  }
+  to {
+    background-position: 608px 0;
+  }
+}
+
+
+ft-expand {
+  background-color: #D6E8EA;
+  height: 250px;
+  margin-top: 0;
+  overflow: hidden;
+  position: absolute;
+  text-align: center;
+  width: 970px;
+}
+
+#close {
+  height: 20px;
+  right: 0;
+  top: 0;
+  width: 20px;
+  z-index: 850;
+}
+
+.expCapOneLogo {
+  height: 36px;
+  left: 472px;
+  top: 17px;
+  width: 98px;
+  z-index: 399;
+}
+
+.expCapOneLogo #redSwoop {
+  height: 36px;
+  left: 27px;
+  top: 0;
+  width: 68px;
+}
+
+.expCapOneLogo #capital {
+  height: 15px;
+  left: 0;
+  top: 14px;
+  width: 67px;
+}
+
+.expCapOneLogo #one {
+  height: 15px;
+  left: 67px;
+  top: 14px;
+  width: 31px;
+}
+
+.expandBtn,
+.closeBtn {
+  height: 20px;
+  right: 0;
+  top: 0;
+  transform: rotate(180deg);
+  width: 20px;
+  z-index: 850;
+}
+
+.closeBtn {
+  transform: rotate(0deg);
+}
+
+.txt2a {
+  height: 18px;
+  left: 0px;
+  width: 95px;
+}
+
+.txt2b {
+  height: 17px;
+  left: 0;
+  top: 30px;
+  width: 125px;
+}
+
+.txt2c {
+  height: 22px;
+  left: 0px;
+  top: 58px;
+  width: 172px;
+}
+
+.exp-mask {
+  left: 473px;
+  top: 73px;
+}
+
+.exp-mask a {
+  animation: 3s cubic-bezier(0.7, 0.1, 0.1, 0.7) 0.25s expshimmer;
+  background-position: -250px 0;
+  display: block;
+  height: 80px;
+  margin: 0px auto;
+  position: relative;
+  text-align: center;
+  width: 172px;
+}
+
+#exp-mask-glimmer {
+  height: 68px;
+  width: 246px;
+}
+
+.exp-mask a::after {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(0 0, circle farthest-side, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0.8) 60%, rgba(255, 255, 255, 0) 100%) no-repeat;
+  background: radial-gradient(circle farthest-side at 0 0, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0.8) 60%, rgba(255, 255, 255, 0) 100%) no-repeat;
+  background-position: inherit;
+  mask: url("#exp-mask-glimmer");
+}
+
+
+@keyframes expshimmer {
+  from {
+    background-position: -235px 0;
+  }
+  to {
+    background-position: 235px 0;
+  }
+}
+
+/*----- Video Container -----*/
+.videoCont {
+  height: 250px;
+  left: 0;
+  top: 0;
+  width: 446px;
+  z-index: 830;
+}
+
+#vidPoster {
+  height: inherit;
+  left: 0;
+  width: inherit;
+  z-index: 831;
+}
+
+#video1 {
+  height: inherit;
+  left: 0;
+  position: absolute;
+  width: inherit;
+}
+
+/*----- expand cta -----*/
+.ctaExpCont {
+  height: 100%;
+  width: 100%;
+}
+
+.ctaExpCont .ctaBtn {
+  height: 11px;
+  left: 472px;
+  top: 177px;
+  width: 87px;
+}
+
+.ctaExpCont #ctaTxt {
+  height: 11px;
+  left: 0;
+  top: 0;
+  width: 75px;
+}
+
+.ctaExpCont #rArrowExp {
+  height: 9px;
+  left: 81px;
+  top: 2px;
+  width: 6px;
+}
+
+#fdicLogoExp {
+  height: 23px;
+  left: 471px;
+  top: 213px;
+  width: 37px;
+}
+
+#jeremy {
+  height: 250px;
+  left: 696px;
+  top: 0px;
+  width: 274px;
+}
