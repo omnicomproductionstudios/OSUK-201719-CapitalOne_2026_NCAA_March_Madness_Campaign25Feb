@@ -28,12 +28,20 @@ function init(){
     
   });
 
+  gsap.set("#ball", { x: -140, y: 0, rotation: 0 });
+  gsap.set("#coffee", { scale:0, autoAlpha:0 });
+
   mainTL.from(redSwoop, 0.25,{alpha:0, scale:4, x:"-=150", y:"+=50", ease:'power3.out'}, _f1)
         .from(capital, 0.25,{alpha:0, y:"+=15", ease:'power3.out'}, '<+=0.02')
         .from(one, 0.25,{alpha:0, y:"+=15", ease:'power3.out'}, '<+=0.04')
 
         .from(txt1a, 0.4,{alpha:0, x:"+=20", ease:'power1.inOut'}, '<')
         .from(".ctaCont", 0.5, {alpha:0, x:"-=10", ease:'power1.inOut', overwrite:0}, '<')
+
+        .to("#ball", { duration: 2, x: 877, ease: "none" }, 0)
+        .to("#ball", {duration: 1, y: -30, ease: "power1.out", yoyo: true, repeat: 1}, 0)
+        .to("#coffee", {duration: 0.45, scale:1, autoAlpha:1, ease: "power4.out" },">-0.1")
+
         .call(onMouseEnter, null, '>+2')
         .call(onMouseLeave, null, '>+1');
 }
@@ -47,7 +55,9 @@ function vidPosterClick(){
 
 function expand(){
   isExpanded = true;
-
+  cardTL.clear();
+  gsap.set("#expBall", { x: -200, y: 149, rotation: 0 });
+  gsap.set("#expCoffee", { scale:0, autoAlpha:0 });
   cardTL.timeScale(1.5);
   cardTL.from('.expCapOneLogo #redSwoop', 0.35,{alpha:0, scale:4, x:"-=150", y:"+=50", ease:'power3.out'}, _f1+0.2)
         .from('.expCapOneLogo #capital', 0.35,{alpha:0, y:"+=15", ease:'power3.out'}, '<+=0.02')
@@ -55,8 +65,11 @@ function expand(){
 
         .from('.txt2a', 0.35,{alpha:0, x:"+=20", ease:'power1.inOut'}, '<')
         .from('.txt2b', 0.35,{alpha:0, x:"+=20", ease:'power1.inOut'}, '<+0.1')
-        .from('.txt2c', 0.35,{alpha:0, x:"+=20", ease:'power1.inOut'}, '<+0.1')
-        .from('.ctaExpCont', 0.35,{alpha:0, x:"+=20", ease:'power1.inOut'}, '<+0.1')
+        .from('#rArrowExp', 0.35,{alpha:0, x:"+=20", ease:'power1.inOut'}, '<+0.1')
+
+        .to("#expBall", { duration: 2, x: 337, ease: "none" }, 0)
+        .to("#expBall", { duration: 1, y: -40, ease: "power1.out", yoyo: true, repeat: 1 }, 0)
+        .to("#expCoffee", { duration: 0.45, scale:1, autoAlpha:1, ease: "power3.out" },">-0.1")
 
   gsap.delayedCall(3, onMouseEnter);
   gsap.delayedCall(3.5, onMouseLeave);

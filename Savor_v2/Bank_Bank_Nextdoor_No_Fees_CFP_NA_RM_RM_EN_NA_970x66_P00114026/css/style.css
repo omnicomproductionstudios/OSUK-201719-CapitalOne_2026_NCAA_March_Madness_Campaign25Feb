@@ -61,10 +61,11 @@ ft-default {
 
 .capOneLogo {
   height: 45px;
-  left: 27px;
-  top: 11px;
+  left: 12px;
+  top: 10px;
   width: 122px;
   z-index: 400;
+  transform: scale(0.93);
 }
 
 #redSwoop {
@@ -90,7 +91,7 @@ ft-default {
 
 .ctaCont {
   height: 25px;
-  right: 64px;
+  right: 146px;
   top: 20px;
   width: 16px;
 }
@@ -108,14 +109,14 @@ ft-default {
 }
 
 #txt1a {
-  height: 28px;
+  height: 19px;
   left: 0;
-  width: 499px;
+  width: 602px;
 }
 
 .mask {
-  left: 230px;
-  top: 21px;
+  left: 179px;
+  top: 23px;
 }
 
 .mask a {
@@ -123,11 +124,11 @@ ft-default {
 cubic-bezier(0.7, 0.1, 0.1, 0.7) 0.25s shimmer;
   background-position: -608px 0;
   display: block;
-  height: 28px;
   margin: 0px auto;
   position: relative;
   text-align: center;
-  width: 499px;
+  width: 602px;
+  height: 19px;
 }
 
 #mask-glimmer {
@@ -178,10 +179,11 @@ ft-expand {
 
 .expCapOneLogo {
   height: 36px;
-  left: 472px;
-  top: 17px;
+  left: 488px;
+  top: 29px;
   width: 98px;
   z-index: 399;
+  transform: scale(1.24);
 }
 
 .expCapOneLogo #redSwoop {
@@ -220,16 +222,16 @@ ft-expand {
 }
 
 .txt2a {
-  height: 18px;
+  height: 28px;
   left: 0px;
-  width: 95px;
+  width: 238px;
 }
 
 .txt2b {
-  height: 17px;
+  height: 34px;
   left: 0;
-  top: 30px;
-  width: 125px;
+  top: 36px;
+  width: 180px;
 }
 
 .txt2c {
@@ -240,19 +242,19 @@ ft-expand {
 }
 
 .exp-mask {
-  left: 473px;
-  top: 73px;
+  left: 476px;
+  top: 99px;
 }
 
 .exp-mask a {
   animation: 3s cubic-bezier(0.7, 0.1, 0.1, 0.7) 0.25s expshimmer;
   background-position: -250px 0;
   display: block;
-  height: 80px;
+  height: 61px;
   margin: 0px auto;
   position: relative;
   text-align: center;
-  width: 172px;
+  width: 238px;
 }
 
 #exp-mask-glimmer {
@@ -346,4 +348,56 @@ ft-expand {
   left: 696px;
   top: 0px;
   width: 274px;
+}
+
+
+#cup{
+  right: 10px;
+  top: 11px;
+  width: 117px;
+  height: 103px;
+}
+#ball{
+  transform: translateX(-100%);
+  left: 0px;
+  top: 18px;
+  width: 46px;
+  height: 39px;
+}
+#coffee{
+  right: 23px;
+  top: 4px;
+  width: 98px;
+  height: 58px;
+}
+#marchLogo{
+  top: 171px;
+  left: 467px;
+  width: 141px;
+  height: 68px;
+}
+#rArrowExp{
+  height: 26px;
+  left: 827px;
+  top: 119px;
+  width: 17px;
+}
+#expCup {
+  right: -4px;
+  top: 143px;
+  width: 221px;
+  height: 194px;
+  z-index: 5;
+}
+#expBall{
+  z-index: 4;
+  width: 90px;
+  height: 75px;
+}
+#expCoffee{
+  right: 19px;
+  top: 129px;
+  z-index: 6;
+  width: 183px;
+  height: 109px;
 }

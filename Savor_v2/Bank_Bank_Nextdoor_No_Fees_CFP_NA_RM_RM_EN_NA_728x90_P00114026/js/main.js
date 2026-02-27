@@ -70,7 +70,6 @@ function expand(){
 
         .to("#expBall", { duration: 2, x: 270, ease: "none" }, 0)
         .to("#expBall", { duration: 1, y: -40, ease: "power1.out", yoyo: true, repeat: 1 }, 0)
-        
         .to("#expCoffee", { duration: 0.45, scale:1, autoAlpha:1, ease: "power3.out" },">-0.1")
 
   gsap.delayedCall(3, onMouseEnter);
