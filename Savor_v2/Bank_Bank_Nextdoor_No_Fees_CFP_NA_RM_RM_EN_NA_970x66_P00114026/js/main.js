@@ -35,7 +35,6 @@ function init(){
         .from(capital, 0.25,{alpha:0, y:"+=15", ease:'power3.out'}, '<+=0.02')
         .from(one, 0.25,{alpha:0, y:"+=15", ease:'power3.out'}, '<+=0.04')
 
-        .from(txt1a, 0.4,{alpha:0, x:"+=20", ease:'power1.inOut'}, '<')
         .from(".ctaCont", 0.5, {alpha:0, x:"-=10", ease:'power1.inOut', overwrite:0}, '<')
 
         .to("#ball", { duration: 2, x: 877, ease: "none" }, 0)
@@ -63,8 +62,6 @@ function expand(){
         .from('.expCapOneLogo #capital', 0.35,{alpha:0, y:"+=15", ease:'power3.out'}, '<+=0.02')
         .from('.expCapOneLogo #one', 0.35,{alpha:0, y:"+=15", ease:'power3.out'}, '<+=0.04')
 
-        .from('.txt2a', 0.35,{alpha:0, x:"+=20", ease:'power1.inOut'}, '<')
-        .from('.txt2b', 0.35,{alpha:0, x:"+=20", ease:'power1.inOut'}, '<+0.1')
         .from('#rArrowExp', 0.35,{alpha:0, x:"+=20", ease:'power1.inOut'}, '<+0.1')
 
         .to("#expBall", { duration: 2, x: 337, ease: "none" }, 0)
