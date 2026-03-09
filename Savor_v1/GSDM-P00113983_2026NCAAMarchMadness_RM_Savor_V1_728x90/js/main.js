@@ -31,7 +31,7 @@ function init(){
 
 
 
-  gsap.set(".basketballCont", { x: 160, y: 0 });
+  gsap.set(".basketballCont", { x: -100, y: 0 });
   // gsap.set("#basketball", { rotation: 180, transformOrigin: "50% 50%" });
 
     mainTL.from(redSwoop, 0.35,{alpha:0, scale:4, x:"-=150", y:"+=50", ease:'power3.out'}, _f1)
