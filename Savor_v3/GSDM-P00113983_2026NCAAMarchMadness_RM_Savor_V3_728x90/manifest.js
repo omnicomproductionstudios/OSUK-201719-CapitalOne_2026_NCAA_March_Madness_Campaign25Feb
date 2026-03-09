@@ -1,5 +1,5 @@
 FT.manifest({
-	"filename":"2025BankNCAA_NA_RM_RM_JPEG_728x90_P00107172.html",
+	"filename":"GSDM-P00113983_2026NCAAMarchMadness_RM_Savor_V3_728x90.html",
 	"width":728,
 	"height":90,
 	"clickTagCount":1,

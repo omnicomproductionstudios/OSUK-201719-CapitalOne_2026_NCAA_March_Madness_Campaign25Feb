@@ -31,21 +31,19 @@ function init(){
 
 
 
-  gsap.set(".basketballCont", { x: 160, y: 100 });
-  gsap.set("#basketball", { rotation: 180, transformOrigin: "50% 50%" });
+  gsap.set(".basketballCont", { x: 160, y: 0 });
+  // gsap.set("#basketball", { rotation: 180, transformOrigin: "50% 50%" });
 
-  mainTL.from(redSwoop, 0.35,{alpha:0, scale:4, x:"-=150", y:"+=50", ease:'power3.out'}, _f1)
+    mainTL.from(redSwoop, 0.35,{alpha:0, scale:4, x:"-=150", y:"+=50", ease:'power3.out'}, _f1)
         .from(capital, 0.35,{alpha:0, y:"+=15", ease:'power3.out'}, '<+0.02')
         .from(one, 0.35,{alpha:0, y:"+=15", ease:'power3.out'}, '<+0.04')
+
         .to(".basketballCont", 6, { x: 768, ease: "power1.inOut" }, 0.5)
-        .to(".basketballCont",  1.5, { y: "-250", yoyo: true, repeat: 3, ease: "sine.inOut" }, 0.62)
-        .to(basketball, 4, { rotation: "+=720", ease: "none" }, "<")
-            .to(
-              ".basketballBounce",
-              5 ,
-              { y: "-=0", yoyo: !0, ease: "sine.inOut", repeat: 1 },
-              "<+0.1",
-            )
+        .to(".basketballCont",  1.5, { y: "-100", yoyo: true, repeat: 3, ease: "sine.inOut" }, 0.62)
+        // .to(basketball, 4, { rotation: "+=720", ease: "none" }, "<")
+        .to(".basketballBounce", 5 , { y: "-=0", yoyo: !0, ease: "sine.inOut", repeat: 1 }, "<+0.1")
+
+
         .from("#rArrowExp", 0.5, {alpha:0, x:"-=10", ease:'power1.inOut', overwrite:0}, '<')
 
         .call(onMouseEnter, null, '>+2')

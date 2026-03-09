@@ -335,16 +335,22 @@ ft-expand{
 
 #cup{
   right: 11px;
-  top: 35px;
+  top: 32px;
+  width: 89px;
+  height: 78.21px;
 }
 #ball{
   transform: translateX(-100%);
   left: 0px;
   top: 30px;
+  width: 36px;
+  height: 30px;
 }
 #coffee{
   right: 13px;
   top: 17px;
+  width: 92px;
+  height: 55px
 }
 #marchLogo{
   top: 174px;

@@ -1,5 +1,5 @@
 FT.manifest({
-	"filename":"savor_v1_970x66.html",
+	"filename":"GSDM-P00113983_2026NCAAMarchMadness_RM_Savor_V1_970x66.html",
 	"width":970,
 	"height":66,
 	"clickTagCount":1,

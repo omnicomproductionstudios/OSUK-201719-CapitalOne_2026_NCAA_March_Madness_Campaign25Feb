@@ -1,5 +1,5 @@
 FT.manifest({
-	"filename":"2025BankNCAA_NA_RM_RM_JPEG_1280x100_P00107172.html",
+	"filename":"2026BankNCAA_NA_RM_RM_HTML5_1280x100_P00113983.html",
 	"width":1280,
 	"height":100,
 	"clickTagCount":1,
