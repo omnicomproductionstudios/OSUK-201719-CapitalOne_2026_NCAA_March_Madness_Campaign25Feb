@@ -27,26 +27,26 @@ body{
 }
 
 .defaultSize{
-  height: 90px;
-  width: 728px;
+  height: 100px;
+  width: 1280px;
 }
 .expandSize{
-  height: 250px;
-  width: 728px;
+  height: 418px;
+  width: 1280px;
 }
 
 ft-default{
     background-color: #D6E8EA;
-    height:90px;
+    height:100px;
     overflow: hidden;
     text-align: center;
-    width:728px;    
+    width:1280px;    
 }
 
 /* B-Ball, shadow, and svg bounce path ------------ */
 .ballCont{
   height: 170px;
-  left: 745px;
+  left: 1300px;
   top: -50px;
   width: 50px;
   z-index: 20;
@@ -67,26 +67,26 @@ ft-default{
 
 /* frame 1 */
 #txt1Cont{
-  height: 90px;
+  height: 100px;
   left: 0px;
   overflow: hidden;
   top: 0px;
-  width: 728px;
+  width: 1280px;
   z-index: 10;
 }
 
 #txt1a{
-  height: 51px;
-  left: 257px;
-  top: 19px;
-  width: 291px;
+  height: 37px;
+  left: 274px;
+  top: 35px;
+  width: 786px;
 }
 
 #rArrow{
-  height: 24px;
-  left: 640px;
+  height: 36px;
+  left: 1174px;
   top: 32px;
-  width: 16px;
+  width: 30px;
 }
 
 #fdic {
@@ -100,9 +100,9 @@ ft-default{
 /* Collapsed Cap One Logo ------------ */
 .capOneLogo{
   height: 65px;
-  left: 16px;
-  top: 20px;
-  transform: scale(0.77);
+  left: 21px;
+  top: 23px;
+  transform: scale(0.83);
   transform-origin: top left;
   width: 181px;
   z-index: 5;
@@ -128,12 +128,12 @@ ft-default{
 
 /* Expanded Cap One Logo ------------ */
 .expCapOneLogo{
-  height: 70px;
-  left: 461px;
-  transform: scale(0.51);
+  height: 78px;
+  left: 774px;
+  transform: scale(1.01);
   transform-origin: top left;
-  top: 23px;
-  width: 196px;
+  top: 31px;
+  width: 198px;
   z-index: 1;
 }
 
@@ -159,10 +159,10 @@ ft-default{
 }
 
 #txt2a{
-  height: 48px;
-  left: 462px;
-  top: 95px;
-  width: 197px;
+  height: 61px;
+  left: 775px;
+  top: 181px;
+  width: 272px;
   z-index: 201;
 }
 #txt2b{
@@ -189,30 +189,30 @@ ft-default{
 
 #exprArrow{
   height: 26px;
-  left: 678px;
-  top: 107px;
+  left: 1146px;
+  top: 196px;
   width: 17px;
   z-index: 205;
 }
 
 .ballContExp{
   height: 170px;
-  left: 350px;
-  top:170px;
+  left: 600px;
+  top:270px;
   width: 50px;
   z-index: 400;
-  scale: 0.7;
+  scale: 1.2;
   opacity: 0;
 }
 .ballContExp #ball2{
   left: -20px;
-  top: -38px;
+  top: -15px;
   width: 94px;
 }
 .ballContExp #ball2Shadow{
   left: -45px;
   transform-origin: center center;
-  top: 61px;
+  top: 80px;
   z-index: 401;
   width: 110px;
 }
@@ -227,12 +227,12 @@ ft-default{
 
 ft-expand{
     background-color: #D6E8EA;
-    height: 250px;
+    height: 418px;
     margin-top:0;
     overflow: hidden;
     position:absolute;
     text-align: center;
-    width:728px;
+    width:1280px;
 }
 
 #close{
@@ -255,10 +255,10 @@ ft-expand{
 }
 
 .videoCont{
-  height: 250px;
+  height: 418px;
   left: 0;
   top: 0;
-  width: 444px;
+  width: 744px;
   z-index: 830;
 }
 #vidPoster{
@@ -280,18 +280,18 @@ ft-expand{
     padding-top: 17.5px;
 }
 .ncaaLockupCont{
-  height: 74px;
-  left: 444px;
+  height: 105px;
+  left: 856px;
   overflow: hidden;
-  top: 163px;
+  top: 293px;
   width: 310px;
   z-index: 210;
 }
 #proudPartnerOf{
-  height: 60px;
-  left: 80px;
-  top: 11px;
-  width: 124px;
+  height: 97px;
+  left: 56px;
+  top: 3px;
+  width: 202px;
 }
 #ncaammLogo{
   height: 36px;

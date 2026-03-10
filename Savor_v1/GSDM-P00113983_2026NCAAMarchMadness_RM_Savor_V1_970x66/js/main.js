@@ -36,7 +36,8 @@ function init(){
     
   }); 
 
-  mainTL.from('.capOneLogo', 0.4,{x:"-=232", ease:'power1.out', overwrite:0}, 0.25)
+  mainTL
+  // .from('.capOneLogo', 0.4,{x:"-=232", ease:'power1.out', overwrite:0}, 0.25)
         .from(redSwoop, 0.25,{alpha:0, scale:"4", x:"-=30", y:"+=40", transformOrigin:"100% 50%", ease:'power1.out', overwrite:0}, 0.5)
         .from(capital, 0.25,{alpha:0, y:"+=10", ease:'power1.inOut', overwrite:0}, 0.5)
         .from(one, 0.25,{alpha:0, y:"+=10", ease:'power1.inOut', overwrite:0}, 0.55)
@@ -55,7 +56,6 @@ function vidPosterClick(){
 }
 
 function expand(){
-  
     expandedTL.to(banner, 0,{css:{overflow:"visible"}}, 0)
               .from('.videoCont', 0.2,{alpha:0}, _f1+0.15)
               .from('.capOneLogo', 0.4,{x:"-=232", ease:'power1.out', overwrite:0}, _f1-0.2)
@@ -64,11 +64,11 @@ function expand(){
               .from(expRedSwoop, 0.4,{autoAlpha:0, scale:"2", x:"-=60", y:"+=8", transformOrigin:"50% 50%", ease:'power1.out', overwrite:0,}, _f1)
               .from(expCapital, 0.4,{alpha:0, y:"+=10", ease:'power1.inOut', overwrite:0}, _f1)
               .from(expOne, 0.4,{alpha:0, y:"+=10", ease:'power1.inOut', overwrite:0}, _f1+0.05)
-              
+
               .to('.ballContExp', 0.2,{autoAlpha:1}, _f1+0.5)
-              .to('.ballContExp', 8,{x:"+=800", ease:"none"}, _f1+0.5)
-              .to('.ballContExp #ball2', 1,{ y:"-=300", ease:"power1.inOut", yoyo:true, repeat:10 }, _f1+0.5)
-              .to('.ballContExp #ball2Shadow', 1,{ y:"-=280", alpha:1, transformOrigin:"50% 50%", ease:"power1.inOut", yoyo:true, repeat:10 }, _f1+0.5)
+              .to('.ballContExp', 6,{x:"+=1400", ease:"none"}, _f1+0.5)
+              .to('.ballContExp #ball2', 0.6,{ y:"-=300", ease:"power1.inOut", yoyo:true, repeat:6 }, _f1+0.5)
+              .to('.ballContExp #ball2Shadow', 0.6,{ y:"-=270", alpha:1, transformOrigin:"50% 50%", ease:"power1.inOut", yoyo:true, repeat:6 }, _f1+0.5)
               
             
               .from(exprArrow, 0.4,{alpha:0, x:"-=15", ease: "none"}, '<+=1.5')
