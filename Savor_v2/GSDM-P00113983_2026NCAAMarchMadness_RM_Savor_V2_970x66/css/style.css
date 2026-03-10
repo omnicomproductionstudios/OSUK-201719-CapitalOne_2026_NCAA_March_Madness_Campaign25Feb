@@ -375,10 +375,10 @@ ft-expand {
   height: 39px;
 }
 #coffee{
-  right: 12px;
-  top: -7px;
-  width: 120.94px;
-  height: 71.53px;
+  right: 18px;
+  top: 0px;
+  width: 108.94px;
+  height: 63.53px;
 }
 #marchLogo{
   top: 171px;
@@ -405,9 +405,9 @@ ft-expand {
   height: 75px;
 }
 #expCoffee{
-  right: 0px;
-  top: 106px;
+  right: 12px;
+  top: 122px;
   z-index: 6;
-  width: 227.5px;
-  height: 134.55px;
+  width: 204.5px;
+  height: 119.55px;
 }

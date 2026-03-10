@@ -347,10 +347,10 @@ ft-expand{
   height: 30px;
 }
 #coffee{
-  right: 13px;
-  top: 17px;
-  width: 92px;
-  height: 55px
+  right: 16px;
+  top: 23px;
+  width: 84px;
+  height: 50px;
 }
 #marchLogo{
   top: 174px;
@@ -366,11 +366,11 @@ ft-expand{
 }
 
 #expCup {
-    right: -29px;
-    top: 147px;
-    width: 174px;
-    height: 153px;
-    z-index: 5;
+  right: -39px;
+  top: 156px;
+  width: 174px;
+  height: 153px;
+  z-index: 5;
 }
 #expBall{
   /* left: 382px;
@@ -380,9 +380,9 @@ ft-expand{
   z-index: 4;
 }
 #expCoffee{
-  right: -27px;
-  top: 121px;
+  right: -31px;
+  top: 138px;
   z-index: 6;
-  width: 179.17px;
-  height: 105.97px;
+  width: 164.88px;
+  height: 96px;
 }

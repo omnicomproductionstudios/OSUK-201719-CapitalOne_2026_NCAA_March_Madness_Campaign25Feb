@@ -56,7 +56,7 @@ function expand(){
   isExpanded = true;
   cardTL.clear();
   cardTL.timeScale(1.5);
-   gsap.set("#expBall", { x: -200, y: 239, rotation: 0 });
+   gsap.set("#expBall", { x: -200, y: 260, rotation: 0 });
   gsap.set("#expCoffee", { scale:0, autoAlpha:0 });
   cardTL.from('.expCapOneLogo #redSwoop', 0.35,{alpha:0, scale:4, x:"-=150", y:"+=50", ease:'power3.out'}, _f1+0.2)
         .from('.expCapOneLogo #capital', 0.35,{alpha:0, y:"+=15", ease:'power3.out'}, '<+=0.02')
