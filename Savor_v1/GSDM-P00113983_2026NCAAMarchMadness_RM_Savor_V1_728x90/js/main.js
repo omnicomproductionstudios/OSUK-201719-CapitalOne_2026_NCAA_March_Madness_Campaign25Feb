@@ -1,11 +1,18 @@
 var mainTL = gsap.timeline();
-var cardTL = gsap.timeline();
+var expandedTL = gsap.timeline();
+var videoPlayTL = gsap.timeline();
 var vidPoster, video1;
-var isExpanded = false;
-var swaySpeed = 3;
-var _f1 = 0.25;
+var _f1 = 0.25,
+    _f2 = 2.75,
+    _f3 = 5.25,
+    _f4 = 7.75,
+    _f5 = 10.25;
 
-function init(){
+
+
+function init(){ 
+
+
   myFT.on('expand', expand);
   myFT.on('contract', contract);
   video1 = myFT.$("#video1");
@@ -18,80 +25,70 @@ function init(){
   vidPoster = document.getElementById('vidPoster');
   banner = document.getElementById('banner');
   vidPoster.addEventListener('click', vidPosterClick);
-  banner.addEventListener('mouseenter', onMouseEnter);
-  banner.addEventListener('mouseleave', onMouseLeave);
+
+  banner.addEventListener('mouseenter', onmouseenter);
+  banner.addEventListener('mouseleave', onmouseleave);
 
   document.getElementById('cover').style.display = "none";
   
   video1.on("ended", function() {
     gsap.to(vidPoster, 0.4,{autoAlpha:1, ease:Power2.easeOut})
     
-  });
+  }); 
 
+  mainTL.from('.capOneLogo', 0.4,{x:"-=232", ease:'power1.out', overwrite:0}, 0.25)
+        .from(redSwoop, 0.25,{alpha:0, scale:"4", x:"-=30", y:"+=40", transformOrigin:"100% 50%", ease:'power1.out', overwrite:0}, 0.5)
+        .from(capital, 0.25,{alpha:0, y:"+=10", ease:'power1.inOut', overwrite:0}, 0.5)
+        .from(one, 0.25,{alpha:0, y:"+=10", ease:'power1.inOut', overwrite:0}, 0.55)
 
-
-
-  gsap.set(".basketballCont", { x: -100, y: 0 });
-  // gsap.set("#basketball", { rotation: 180, transformOrigin: "50% 50%" });
-
-    mainTL.from(redSwoop, 0.35,{alpha:0, scale:4, x:"-=150", y:"+=50", ease:'power3.out'}, _f1)
-        .from(capital, 0.35,{alpha:0, y:"+=15", ease:'power3.out'}, '<+0.02')
-        .from(one, 0.35,{alpha:0, y:"+=15", ease:'power3.out'}, '<+0.04')
-
-        .to(".basketballCont", 6, { x: 768, ease: "power1.inOut" }, 0.5)
-        .to(".basketballCont",  1.5, { y: "-100", yoyo: true, repeat: 3, ease: "sine.inOut" }, 0.62)
-        // .to(basketball, 4, { rotation: "+=720", ease: "none" }, "<")
-        .to(".basketballBounce", 5 , { y: "-=0", yoyo: !0, ease: "sine.inOut", repeat: 1 }, "<+0.1")
-
-
-        .from("#rArrowExp", 0.5, {alpha:0, x:"-=10", ease:'power1.inOut', overwrite:0}, '<')
-
-        .call(onMouseEnter, null, '>+2')
-        .call(onMouseLeave, null, '>+1');
+        
+        .from('.ballCont', 3,{x:"-=1030", ease: "none"}, _f1+0.5)  
+        .to('.ballCont #ball', 0.6,{y:"+=115", ease: "power1.in", yoyo:true, repeat:6}, _f1+0.5)  
+        .to('.ballCont #ballShadow', 0.6,{alpha:1, y:"+=100", transformOrigin:"50% 50%", ease: "power1.in", yoyo:true, repeat:6}, _f1+0.5)  
+        
 }
 
 function vidPosterClick(){
-  gsap.to(vidPoster, 0.2,{autoAlpha:0, ease:Power2.easeOut, onComplete:function(){
-    video1[0].play();
-    video1[0].muted = false;}
-  });
+  gsap.to(vidPoster, 0.1,{autoAlpha:0, ease:Power2.easeOut});
+  video1[0].play();
+  video1[0].muted = false;
 }
 
 function expand(){
-  isExpanded = true;
-  cardTL.clear();
-  gsap.set(".expBasketballCont", { x: 430, y: 250 });
-  cardTL.timeScale(1.5);
-  cardTL.from('.expCapOneLogo #redSwoop', 0.35,{alpha:0, scale:4, x:"-=150", y:"+=50", ease:'power3.out'}, _f1+0.2)
-        .from('.expCapOneLogo #capital', 0.35,{alpha:0, y:"+=15", ease:'power3.out'}, '<+0.02')
-        .from('.expCapOneLogo #one', 0.35,{alpha:0, y:"+=15", ease:'power3.out'}, '<+0.04')
+  
+    expandedTL.to(banner, 0,{css:{overflow:"visible"}}, 0)
+              .from('.videoCont', 0.2,{alpha:0}, _f1+0.15)
+              .from('.capOneLogo', 0.4,{x:"-=232", ease:'power1.out', overwrite:0}, _f1-0.2)
+              .from(txt2a, 0.5,{alpha:0, ease:'power2.easeInOut', overwrite:0}, _f1)
 
-         .to(".expBasketballCont", 6, { x: 768, ease: "power1.inOut" }, 0.5)
-        .to(".expBasketballCont",  1.5, { y: "-250", yoyo: true, repeat: 3, ease: "sine.inOut" }, 0.62)
-        .to(basketball, 4, { rotation: "+=720", ease: "none" }, "<")
-            .to(
-              ".expBasketballBounce",
-              5 ,
-              { y: "-=0", yoyo: !0, ease: "sine.inOut", repeat: 1 },
-              "<+0.1",
-            ) 
+              .from(expRedSwoop, 0.4,{autoAlpha:0, scale:"2", x:"-=60", y:"+=8", transformOrigin:"50% 50%", ease:'power1.out', overwrite:0,}, _f1)
+              .from(expCapital, 0.4,{alpha:0, y:"+=10", ease:'power1.inOut', overwrite:0}, _f1)
+              .from(expOne, 0.4,{alpha:0, y:"+=10", ease:'power1.inOut', overwrite:0}, _f1+0.05)
 
-  gsap.delayedCall(3, onMouseEnter);
-  gsap.delayedCall(3.5, onMouseLeave);
-}
+              .to('.ballContExp', 8,{x:"+=800", ease:"none"}, _f1+0.5)
+              .to('.ballContExp #ball2', 1,{ y:"-=500", ease:"power1.inOut", yoyo:true, repeat:10 }, _f1+0.5)
+              .to('.ballContExp #ball2Shadow', 1,{ y:"-=460", alpha:1, transformOrigin:"50% 50%", ease:"power1.inOut", yoyo:true, repeat:10 }, _f1+0.5)
+              
+            
+              .from(exprArrow, 0.4,{alpha:0, x:"-=15", ease: "none"}, '<+=1.5')
+                 
+      expandedTL.restart();
+      gsap.to(ball, {css:{transform:"unset"}},0);
+    }
 function contract(){
-  isExpanded = false;
-  gsap.set(vidPoster, {autoAlpha:1});
+  gsap.to(ball, {css:{transform:"unset"}},0.2);
+  gsap.to(vidPoster, {autoAlpha:1});
+  
   mainTL.restart();
 }
 
-function onMouseEnter(){
-  gsap.to(rArrow, 0.2,{x:"5", ease:'power1.inOut'});
-  gsap.to(rArrowExp, 0.2,{x:"5", ease:'power1.inOut'});
+function onmouseenter(){
+  gsap.to(rArrow, 0.2, {x:10, ease:'power3.out'})
+  gsap.to(exprArrow, 0.2, {x:10, ease:'power3.out'})
 }
-function onMouseLeave(){
-  gsap.to(rArrow, 0.2,{x:"0", ease:'power1.inOut'});
-  gsap.to(rArrowExp, 0.2,{x:"0", ease:'power1.inOut'});
+function onmouseleave(){
+  gsap.to(rArrow, 0.2, {x:0, ease:'power3.out'})
+  gsap.to(exprArrow, 0.2, {x:0, ease:'power3.out'})
 }
 
 window.onload=init;
