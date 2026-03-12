@@ -48,11 +48,6 @@ function init(){
         .to('.ballCont #ball', 0.3,{y:"+=5", repeat: 1, yoyo: true, ease: "power1.in"}, ">")
         .to('.ballCont', 2,{rotation:-20, yoyo:true, repeat:3, ease:"sine.inOut"}, ">-=0.2")
 
-        
-        // .to('.ballCont #ballShadow', 0.3,{y:"+=15", ease:"power1.in", yoyo:true, repeat:13}, _f1+0.5)
-        // .to('.ballCont #ball', 0.3,{x:"+=2", yoyo:true, repeat:13, ease:"sine.inOut"}, _f1+0.5)
-
-        
 }
 
 function vidPosterClick(){
@@ -63,9 +58,8 @@ function vidPosterClick(){
 
 function expand(){
   
+  gsap.set(".ballContExp", {y:120})
     expandedTL
-    // .set(".ballContExp", {y:600})
-              
               .to(banner, 0,{css:{overflow:"visible"}}, 0)
               .from('.videoCont', 0.2,{alpha:0}, _f1+0.15)
               .from('.capOneLogo', 0.4,{x:"-=232", ease:'power1.out', overwrite:0}, _f1-0.2)
@@ -75,18 +69,14 @@ function expand(){
               .from(expCapital, 0.4,{alpha:0, y:"+=10", ease:'power1.inOut', overwrite:0}, _f1)
               .from(expOne, 0.4,{alpha:0, y:"+=10", ease:'power1.inOut', overwrite:0}, _f1+0.05)
               
-              .to('.ballContExp', 0.5,{autoAlpha:1}, _f1+0.5)
-            .to('.ballContExp', 5,{x:"+=274", ease:"sine.out"}, _f1+0.5)
+              .from(exprArrow, 0.4,{alpha:0, x:"-=15", ease: "none"}, '>')
+          
 
-            .to('.ballContExp #ball2', 1,{y:"+=130", ease:"power1.inOut", yoyo:true, repeat:4}, _f1+0.5)
-            .to('.ballContExp #ball2Shadow', 1,{y:"+=120", alpha:1, ease:"power1.inOut", yoyo:true, repeat:4}, _f1+0.5)
-
-            .to('.ballContExp #ball2', 0.3,{x:"+=2", yoyo:true, repeat:4, ease:"sine.inOut"}, _f1+0.5)
-
-            // .to('.ballContExp', 2,{rotation:-20, transformOrigin: "center center", yoyo:true, repeat:1, ease:"sine.inOut"}, "<5")
+              .to(".ballContExp", 1.2, {y:0, ease: "power1.inOut",}, "0")
+              .to('.ballContExp #ball2', 0.3,{y:"+=5", repeat: 1, yoyo: true, ease: "power1.in"}, ">")
+              .to('.ballContExp', 2,{rotation:-20, yoyo:true, repeat:3, ease:"sine.inOut"}, ">-=0.2")
               
             
-              .from(exprArrow, 0.4,{alpha:0, x:"-=15", ease: "none"}, '<+=1.5')
                  
       expandedTL.restart();
       gsap.to(ball, {css:{transform:"unset"}},0);

@@ -189,7 +189,7 @@ ft-default{
 
 #exprArrow{
   height: 26px;
-  left: 678px;
+  left: 669px;
   top: 107px;
   width: 17px;
   z-index: 205;
@@ -197,16 +197,15 @@ ft-default{
 
 .ballContExp{
   height: 170px;
-  left: 370px;
-  top:41px;
+  left: 658px;
+  top: 127px;
   width: 50px;
   z-index: 400;
-  scale: 0.9;
-  opacity: 0;
+  scale: 0.7;
 }
 .ballContExp #ball2{
   left: -20px;
-  top: -27px;
+  top: -20px;
   width: 94px;
 }
 .ballContExp #ball2Shadow{
@@ -258,7 +257,7 @@ ft-expand{
   height: 250px;
   left: 0;
   top: 0;
-  width: 444px;
+  width: 445px;
   z-index: 830;
 }
 #vidPoster{
