@@ -37,15 +37,17 @@ function init(){
   }); 
 
   mainTL
-  // .from('.capOneLogo', 0.4,{x:"-=232", ease:'power1.out', overwrite:0}, 0.25)
         .from(redSwoop, 0.25,{alpha:0, scale:"4", x:"-=30", y:"+=40", transformOrigin:"100% 50%", ease:'power1.out', overwrite:0}, 0.5)
         .from(capital, 0.25,{alpha:0, y:"+=10", ease:'power1.inOut', overwrite:0}, 0.5)
         .from(one, 0.25,{alpha:0, y:"+=10", ease:'power1.inOut', overwrite:0}, 0.55)
 
         
-        .from('.ballCont', 3,{x:"-=1030", ease: "none"}, _f1+0.5)  
-        .to('.ballCont #ball', 0.6,{y:"+=115", ease: "power1.in", yoyo:true, repeat:6}, _f1+0.5)  
-        .to('.ballCont #ballShadow', 0.6,{alpha:1, y:"+=100", transformOrigin:"50% 50%", ease: "power1.in", yoyo:true, repeat:6}, _f1+0.5)  
+        .from('.ballCont', 4,{x:"-=1030", ease:"sine.out"}, _f1+0.5)
+        .to('.ballCont #ball', 0.3,{y:"-=32", ease:"power1.out", yoyo:true, repeat:13}, _f1+0.5)
+        .to('.ballCont #ballShadow', 0.3,{y:"-=22", ease:"power1.out", yoyo:true, repeat:13}, _f1+0.5)
+        .to('.ballCont #ball', 0.3,{x:"+=2", yoyo:true, repeat:13, ease:"sine.inOut"}, _f1+0.5)
+
+        .to('.ballCont', 2,{rotation:-20, yoyo:true, repeat:1, ease:"sine.inOut"}, ">-=0.2")
         
 }
 
@@ -65,11 +67,17 @@ function expand(){
               .from(expCapital, 0.4,{alpha:0, y:"+=10", ease:'power1.inOut', overwrite:0}, _f1)
               .from(expOne, 0.4,{alpha:0, y:"+=10", ease:'power1.inOut', overwrite:0}, _f1+0.05)
 
-              .to('.ballContExp', 0.2,{autoAlpha:1}, _f1+0.5)
-              .to('.ballContExp', 6,{x:"+=1400", ease:"none"}, _f1+0.5)
-              .to('.ballContExp #ball2', 0.6,{ y:"-=300", ease:"power1.inOut", yoyo:true, repeat:6 }, _f1+0.5)
-              .to('.ballContExp #ball2Shadow', 0.6,{ y:"-=270", alpha:1, transformOrigin:"50% 50%", ease:"power1.inOut", yoyo:true, repeat:6 }, _f1+0.5)
               
+              .to('.ballContExp',{autoAlpha:1}, _f1+0.5)
+              .to('.ballContExp', 5,{x:"+=430", ease:"sine.out"}, _f1+0.5)
+
+              .to('.ballContExp #ball2', 1,{y:"+=130", ease:"power1.inOut", yoyo:true, repeat:4}, _f1+0.5)
+              .to('.ballContExp #ball2Shadow', 1,{y:"+=120", alpha:1, ease:"power1.inOut", yoyo:true, repeat:4}, _f1+0.5)
+
+              .to('.ballContExp #ball2', 0.3,{x:"+=2", yoyo:true, repeat:4, ease:"sine.inOut"}, _f1+0.5)
+
+              .to('.ballContExp', 2,{rotation:-20}, "<5")
+
             
               .from(exprArrow, 0.4,{alpha:0, x:"-=15", ease: "none"}, '<+=1.5')
                  
