@@ -44,9 +44,9 @@ function init(){
         .from(one, 0.25,{alpha:0, y:"+=10", ease:'power1.inOut', overwrite:0}, 0.55)
 
 
-        .to(".ballCont", 1.5, {y:0, ease: "bounce.in",}, "0")
+        .to(".ballCont", 1.5, {y:0, ease: "power1.inOut",}, "0")
         .to('.ballCont #ball', 0.3,{y:"+=5", repeat: 1, yoyo: true, ease: "power1.in"}, ">")
-        .to('.ballCont', 2,{rotation:-20, yoyo:true, repeat:1, ease:"sine.inOut"}, ">-=0.2")
+        .to('.ballCont', 2,{rotation:-20, yoyo:true, repeat:3, ease:"sine.inOut"}, ">-=0.2")
 
         
         // .to('.ballCont #ballShadow', 0.3,{y:"+=15", ease:"power1.in", yoyo:true, repeat:13}, _f1+0.5)
