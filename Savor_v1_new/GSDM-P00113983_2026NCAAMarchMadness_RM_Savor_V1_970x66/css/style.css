@@ -46,10 +46,11 @@ ft-default{
 /* B-Ball, shadow, and svg bounce path ------------ */
 .ballCont{
   height: 170px;
-  left: 838px;
-  top: 7px;
+  left: 834px;
+  top: -11px;
   width: 50px;
   z-index: 20;
+  scale: 0.8;
 }
 .ballCont #ball{
   left: 0;
@@ -60,7 +61,7 @@ ft-default{
 .ballCont #ballShadow{
   left: -9px;
   transform-origin: center center;
-  top: 54px;
+  top: 59px;
   z-index: 401;
   width: 55px;
 }
@@ -197,12 +198,11 @@ ft-default{
 
 .ballContExp{
   height: 170px;
-  left: 400px;
-  top:31px;
+  left: 880px;
+  top: 129px;
   width: 50px;
   z-index: 400;
-  scale: 1.1;
-  opacity: 0;
+  scale: 0.8;
 }
 .ballContExp #ball2{
   left: -20px;
