@@ -47,7 +47,7 @@ ft-default{
 .ballCont{
   height: 170px;
   left: 1103px;
-  top: 20px;
+  top: 22px;
   width: 50px;
   z-index: 20;
 }
@@ -60,7 +60,7 @@ ft-default{
 .ballCont #ballShadow{
   left: -10px;
   transform-origin: center center;
-  top: 48px;
+  top: 51px;
   z-index: 401;
   width: 55px;
 }
@@ -197,12 +197,11 @@ ft-default{
 
 .ballContExp{
   height: 170px;
-  left: 650px;
-  top: 130px;
+  left: 1180px;
+  top: 245px;
   width: 50px;
   z-index: 400;
-  scale: 1.4;
-  opacity: 0;
+  scale: 1.2;
 }
 .ballContExp #ball2{
   left: -20px;
